@@ -8,16 +8,13 @@
 窗口：[left, right]
 初始状态：
 s = "abcabcbb"
-     ↑
-   left,right
+left，right在a
 扩展窗口（right右移）：
 s = "abcabcbb"
-     ↑   ↑
-    left right
+left在a，right在第二个b
 遇到重复字符时收缩窗口（left右移）：
 s = "abcabcbb"
-       ↑ ↑
-    left right
+left在第一个c,right在第二个b
 4. 具体步骤（代码）
 （1）定义函数，接收一个字符指针 s（输入字符串）
 （2）创建大小为128的整型数组，作为哈希表，用于记录每个ASCII字符最后一次出现的位置索引
